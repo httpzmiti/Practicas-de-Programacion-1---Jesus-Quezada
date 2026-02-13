@@ -1,0 +1,39 @@
+# Tarea 2.2 - Sobrecarga de Metodos (Java)
+
+Nombre: Luis Rainiel Perez
+Matricula: 2025-1052  
+
+Este proyecto contiene una clase `Calculadora` que aplica el concepto de **sobrecarga de metodos** en Java.
+La sobrecarga permite tener varios metodos con el mismo nombre, pero con distinta cantidad de parametros.
+
+## Archivos
+- `Calculadora.java`: contiene los metodos de suma, resta, multiplicacion y division.
+- `Main.java`: clase de prueba que ejecuta y muestra en consola el resultado de todos los metodos.
+
+## Metodos implementados (segun requerimiento)
+### Con 2 parametros
+- `sumar(int a, int b)`
+- `restar(int a, int b)`
+- `multiplicar(int a, int b)`
+- `dividir(int a, int b)`
+
+### Con 3 parametros (sin dividir)
+- `sumar(int a, int b, int c)`
+- `restar(int a, int b, int c)`
+- `multiplicar(int a, int b, int c)`
+
+### Con 4 parametros (sin dividir)
+- `sumar(int a, int b, int c, int d)`
+- `restar(int a, int b, int c, int d)`
+- `multiplicar(int a, int b, int c, int d)`
+
+Total: 10 metodos.
+
+## Como ejecutar
+1. Abrir el proyecto en NetBeans (o cualquier IDE).
+2. Ejecutar la clase `Main` (contiene el metodo `public static void main`).
+3. Ver la salida en la consola.
+
+## Nota
+- La division es **entera** (ejemplo: 5 / 2 = 2).
+- No dividir entre 0 porque produce error.
