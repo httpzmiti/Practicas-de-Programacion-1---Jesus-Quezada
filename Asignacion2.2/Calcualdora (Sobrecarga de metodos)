@@ -1,0 +1,71 @@
+// Nombre: Luis Rainiel Perez
+// Matricula: 2025-1052
+
+/*
+  Clase Calculadora
+  - Contiene metodos para sumar, restar, multiplicar y dividir enteros.
+  - Aplica sobrecarga de metodos: mismo nombre, pero diferente cantidad de parametros.
+  - NOTA: dividir() solo existe con 2 parametros, como pide la tarea.
+*/
+public class Calculadora {
+
+    // ----- 2 parametros -----
+
+    // Suma dos enteros y retorna el resultado
+    public int sumar(int a, int b) {
+        return a + b;
+    }
+
+    // Resta b a a y retorna el resultado
+    public int restar(int a, int b) {
+        return a - b;
+    }
+
+    // Multiplica dos enteros y retorna el resultado
+    public int multiplicar(int a, int b) {
+        return a * b;
+    }
+
+    /*
+      Divide a entre b y retorna el resultado.
+      NOTA: es division entera (ej: 5 / 2 = 2).
+      IMPORTANTE: si b es 0, el programa lanza error.
+    */
+    public int dividir(int a, int b) {
+        return a / b;
+    }
+
+    // ----- 3 parametros (NO dividir) -----
+
+    // Suma tres enteros y retorna el resultado
+    public int sumar(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Resta b y c a a y retorna el resultado
+    public int restar(int a, int b, int c) {
+        return a - b - c;
+    }
+
+    // Multiplica tres enteros y retorna el resultado
+    public int multiplicar(int a, int b, int c) {
+        return a * b * c;
+    }
+
+    // ----- 4 parametros (NO dividir) -----
+
+    // Suma cuatro enteros y retorna el resultado
+    public int sumar(int a, int b, int c, int d) {
+        return a + b + c + d;
+    }
+
+    // Resta b, c y d a a y retorna el resultado
+    public int restar(int a, int b, int c, int d) {
+        return a - b - c - d;
+    }
+
+    // Multiplica cuatro enteros y retorna el resultado
+    public int multiplicar(int a, int b, int c, int d) {
+        return a * b * c * d;
+    }
+}
