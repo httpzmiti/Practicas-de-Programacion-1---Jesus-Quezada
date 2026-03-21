@@ -1,0 +1,81 @@
+/**
+ *
+ * @author Raini
+ */
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class RegistroAcademicoGUI extends JFrame {
+
+    private JTextField txtNombre, txtMatricula, txtCarrera;
+    private JTextField txtPracticas, txtParciales, txtAsignaciones, txtExamen;
+    private JLabel lblResultado;
+
+    public RegistroAcademicoGUI() {
+        setTitle("Registro Academico");
+        setSize(400, 400);
+        setLayout(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        add(new JLabel("Nombre:")).setBounds(20, 20, 120, 25);
+        txtNombre = new JTextField(); txtNombre.setBounds(150, 20, 200, 25);
+        add(txtNombre);
+
+        add(new JLabel("Matricula:")).setBounds(20, 50, 120, 25);
+        txtMatricula = new JTextField(); txtMatricula.setBounds(150, 50, 200, 25);
+        add(txtMatricula);
+
+        add(new JLabel("Carrera:")).setBounds(20, 80, 120, 25);
+        txtCarrera = new JTextField(); txtCarrera.setBounds(150, 80, 200, 25);
+        add(txtCarrera);
+
+        add(new JLabel("Practicas:")).setBounds(20, 110, 120, 25);
+        txtPracticas = new JTextField(); txtPracticas.setBounds(150, 110, 200, 25);
+        add(txtPracticas);
+
+        add(new JLabel("Parciales:")).setBounds(20, 140, 120, 25);
+        txtParciales = new JTextField(); txtParciales.setBounds(150, 140, 200, 25);
+        add(txtParciales);
+
+        add(new JLabel("Asignaciones:")).setBounds(20, 170, 120, 25);
+        txtAsignaciones = new JTextField(); txtAsignaciones.setBounds(150, 170, 200, 25);
+        add(txtAsignaciones);
+
+        add(new JLabel("Examen Final:")).setBounds(20, 200, 120, 25);
+        txtExamen = new JTextField(); txtExamen.setBounds(150, 200, 200, 25);
+        add(txtExamen);
+
+        JButton btn = new JButton("Calcular Resultado");
+        btn.setBounds(100, 240, 200, 30);
+        add(btn);
+
+        lblResultado = new JLabel("");
+        lblResultado.setBounds(80, 280, 300, 30);
+        add(lblResultado);
+
+        btn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    double p = Double.parseDouble(txtPracticas.getText());
+                    double pa = Double.parseDouble(txtParciales.getText());
+                    double a = Double.parseDouble(txtAsignaciones.getText());
+                    double ef = Double.parseDouble(txtExamen.getText());
+
+                    if (p < 0 || p > 40 || pa < 0 || pa > 20 ||
+                        a < 0 || a > 20 || ef < 0 || ef > 20) {
+                        throw new Exception();
+                    }
+
+                    Estudiante est = new Estudiante(p, pa, a, ef);
+
+                    lblResultado.setText("Nota: " + est.calcularNotaFinal()
+                            + " - " + est.obtenerResultado());
+
+                } catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Error en los datos");
+                }
+            }
+        });
+    }
+}
