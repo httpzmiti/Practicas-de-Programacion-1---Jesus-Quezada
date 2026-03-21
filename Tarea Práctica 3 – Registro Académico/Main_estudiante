@@ -1,0 +1,9 @@
+/**
+ *
+ * @author Raini
+ */
+public class Main_estudiante {
+    public static void main(String[] args) {
+        new RegistroAcademicoGUI().setVisible(true);
+    }
+}
