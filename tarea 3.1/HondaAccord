@@ -1,0 +1,17 @@
+public class HondaAccord extends AutoMovil {
+
+    public HondaAccord() {
+        super();
+        System.out.println("Constructor de HondaAccord");
+    }
+
+    @Override
+    public void encender() {
+        System.out.println("El Honda Accord esta encendiendo con arranque deportivo...");
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("El Honda Accord acelera rapidamente...");
+    }
+}
