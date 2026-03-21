@@ -1,0 +1,19 @@
+# Calculadora Extendida en Java Swing
+
+## Descripcion
+Aplicacion en Java Swing que permite realizar operaciones matematicas basicas, conversion de temperatura, calculo de raiz cuadrada y potencia.
+
+## Funcionalidades
+- Suma, resta, multiplicacion y division
+- Validacion de division entre cero
+- Conversion de temperatura (Celsius a Fahrenheit y viceversa)
+- Calculo de raiz cuadrada
+- Calculo de potencia
+
+## Ejecucion
+1. Abrir el proyecto en NetBeans
+2. Ejecutar la clase Main
+
+## Autor
+Luis Rainiel Pérez
+2025-1052
