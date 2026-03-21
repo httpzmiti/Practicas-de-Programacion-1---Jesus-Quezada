@@ -1,0 +1,26 @@
+/**
+ *
+ * @author Raini
+ */
+public class Estudiante {
+    private double practicas;
+    private double parciales;
+    private double asignaciones;
+    private double examenFinal;
+
+    public Estudiante(double practicas, double parciales,
+                      double asignaciones, double examenFinal) {
+        this.practicas = practicas;
+        this.parciales = parciales;
+        this.asignaciones = asignaciones;
+        this.examenFinal = examenFinal;
+    }
+
+    public double calcularNotaFinal() {
+        return practicas + parciales + asignaciones + examenFinal;
+    }
+
+    public String obtenerResultado() {
+        return calcularNotaFinal() >= 60 ? "APROBADO" : "REPROBADO";
+    }
+}
