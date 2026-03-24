@@ -1,0 +1,30 @@
+# Tarea 4.1 - GUI con Clase de Procesamiento
+
+Este proyecto es una aplicación de escritorio desarrollada en **Java** que demuestra el uso de interfaces gráficas (Swing) y la separación de la lógica de negocios del diseño visual.
+
+## 🎯 Objetivo
+El sistema permite capturar y presentar datos de un participante siguiendo los principios de **encapsulamiento** y **separación de responsabilidades**.
+
+## 🛠️ Estructura del Proyecto
+El código está organizado en dos componentes principales:
+
+1. **`ProcesarDatos.java`**: Clase encargada del almacenamiento. Contiene atributos privados y métodos para capturar y formatear la información.
+2. **`InterfazParticipante.java`**: Clase que extiende de `JFrame`. Maneja la creación de la ventana, los campos de texto y las acciones de los botones.
+
+
+
+## 📋 Requisitos Técnicos
+- **Lenguaje:** Java 17 o superior.
+- **Librerías:** `javax.swing` y `java.awt`.
+- **IDE:** NetBeans.
+- **Datos manejados:** Matrícula, Nombres, Apellidos y Cuatrimestre.
+
+## 🚀 Instrucciones de Uso
+1. Ejecutar la clase `InterfazParticipante`.
+2. Completar los 4 campos de texto con la información requerida.
+3. Presionar el botón **"Capturar"** para guardar los datos en la instancia de la clase lógica.
+4. Presionar el botón **"Presentar"** para visualizar un resumen de los datos en un cuadro de diálogo (`JOptionPane`).
+
+---
+**Autor:** Luis Rainiel Pérez de los Santos  
+**Institución:** Instituto Tecnológico de las Américas (ITLA)  
